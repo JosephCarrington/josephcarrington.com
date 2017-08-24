@@ -1,0 +1,41 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+// Jumbotron
+.jumbotron {
+  background-color: white;
+  .container {
+    max-width: 40rem;
+  }
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+#techIcons {
+  margin: 1em 0;
+
+  img {
+    height: 32px;
+    opacity: 0.4;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  #techIcons img {
+    height: 64px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  #techIcons img {
+    height: 128px;
+  }
+}
